@@ -1,0 +1,97 @@
+class NitroBlock { 
+}
+Scratch.extensions.register(new NitroBlock());
+getInfo() {
+    return {
+        "id": "NitroBlock",
+        "name": "NitroBlock",
+        "blocks": [
+        ],
+        "menus": { 
+        }
+    };
+}
+{
+    "opcode": "substringy", 
+    "blockType": "reporter", 
+    "text": "letters [num1] through [num2] of [string]", 
+    "arguments": { 
+        "num1": { 
+            "type": "number", 
+            "defaultValue": "2" 
+        },
+        "num2": {
+            "type": "number",
+            "defaultValue": "5"
+        },
+        "string": {
+            "type": "string",
+            "defaultValue": "hello world"
+        }
+    }
+},
+class NitroBlock {
+    getInfo() {
+        return {
+            "id": "NitroBlock",
+            "name": "NitroBlock",
+            "blocks": [{
+                    "opcode": "substringy",
+                    "blockType": "reporter",
+                    "text": "letters [num1] through [num2] of [string]",
+                    "arguments": {
+                        "num1": {
+                            "type": "number",
+                            "defaultValue": "2"
+                        },
+                        "num2": {
+                            "type": "number",
+                            "defaultValue": "5"
+                        },
+                        "string": {
+                            "type": "string",
+                            "defaultValue": "hello world"
+                        }
+                    }
+                },
+            }],
+        "menus": { 
+        }
+    };
+}
+Scratch.extensions.register(new NitroBlock());
+
+substringy({num1, num2, string}) { 
+    
+    return string.substring(num1 - 1, num2);  
+}
+class NitroBlock {
+    getInfo() {
+        return {
+            "id": "NitroBlock",
+            "name": "NitroBlock",
+            "blocks": [{
+                    "opcode": "substringy",
+                    "blockType": "reporter",
+                    "text": "letters [num1] through [num2] of [string]",
+                    "arguments": {
+                        "num1": {
+                            "type": "number",
+                            "defaultValue": "2"
+                        },
+                        "num2": {
+                            "type": "number",
+                            "defaultValue": "5"
+                        },
+                        "string": {
+                            "type": "string",
+                            "defaultValue": "hello world"
+                        }
+                    }
+                },
+            }],
+        "menus": { 
+        }
+    };
+    substringy({num1, num2, string}) {
+        return string.substring(num1 - 1, num2);
