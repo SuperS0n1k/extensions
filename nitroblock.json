@@ -1,4 +1,4 @@
-class NitroBlock { //In both instances, NitroBlock will be the name in both instances
+class NitroBlock { 
 }
 Scratch.extensions.register(new NitroBlock());
 getInfo() {
